@@ -27,7 +27,7 @@ erase:
 
 # Clean up temporary files
 clean:
-	rm -f grading/*.elf *.hex
+	rm -f *.elf *.hex
 
 # Remote debug board
 debug: $(NAME).elf
