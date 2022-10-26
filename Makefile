@@ -1,5 +1,5 @@
 # Project name
-SOURCE          = a3.S
+SOURCE          = signal.c
 ADDITIONAL      = 
 # Get base name so we can create .elf file
 NAME            = $(basename $(SOURCE))
@@ -8,7 +8,7 @@ CPU             = msp430g2553
 # Optimisation level
 OPTIMIZATION    = -O0
 # Extra variables
-CFLAGS          = -mmcu=$(CPU) $(OPTIMIZATION) -std=c99 -Wall -g -fomit-frame-pointer -nostartfiles
+CFLAGS          = -mmcu=$(CPU) $(OPTIMIZATION) -std=c99 -Wall -g -fomit-frame-pointer
 # Libemb library link flags
 LIBEMB          = -lserial -lconio
 
