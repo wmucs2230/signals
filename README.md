@@ -1,4 +1,4 @@
-# Assignment Three: Signals
+# A3: Light Modes
 
 ### Schematic
 
