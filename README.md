@@ -1,4 +1,4 @@
-# A3: Light Modes
+# A3: Signals
 
 ### Schematic
 
