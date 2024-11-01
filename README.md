@@ -8,18 +8,18 @@
 
 ##### Mode 0
 
-1. Red LED blinks every 1/2 a second (using execution loop)
+1. Red LED blinks every 1/4 a second (using execution loop)
 
 ##### Mode 1
 
-1. Red LED blinks every 1/2 second (using execution loop)
-2. Green LED blinks every 1/3 second (using timer & interrupt)
+1. Red LED blinks slower, every 1/3 second (using execution loop)
+2. Green LED blinks every 1/2 second (using timer & interrupt)
 
 ##### Mode 2
 
 1. Red LED turns off
-2. Green LED blinks every 1/3 second (using timer & interrupt)
-3. Blue LED blinks every 1/4 second (using timer & signal)
+2. Green LED blinks every 1/2 second (using timer & interrupt)
+3. Blue LED blinks every 1/3 second (using timer & signal)
 
 ##### Mode 3
 
@@ -35,9 +35,9 @@ Because you are using the buttons as interrupts, the completed program will have
 
 ### Tips
 
-Do not recommend setting hardware parameters in the execution loop based on what mode you are in (for instance, checking to see what mode you are in every loop iteration and enabling interrupts for the timer if in Mode 1 or 2, otherwise disabling interrupts if in Mode 0 or 3).
+Do not set hardware parameters in the execution loop based on what mode you are in (for instance, checking to see what mode you are in every loop iteration and enabling interrupts for the timer if in Mode 1 or 2, otherwise disabling interrupts if in Mode 0 or 3).
 
-**This is a waste of time**. You should set hardware parameters _when changing modes_.
+**This is a waste of time**. You should set hardware parameters _only when changing modes_.
 
 ### Timers Map
 
